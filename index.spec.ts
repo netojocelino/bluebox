@@ -4,6 +4,8 @@ import { must, asserts } from './src/tests/utils'
 import 'dotenv/config'
 
 const apiKey =  process.env!.SENDINBLUE_API as string;
+const senderEmail = process.env!.SENDER_EMAIL as string;
+const toEmail = process.env!.TO_EMAIL as string;
 
 const timestamp = () => {
   const now = (new Date()).toLocaleString('pt-BR').split(' ')
@@ -12,11 +14,11 @@ const timestamp = () => {
 
 const emailBody: MailData = {
   to: [{
-    name: 'Jocelino',
-    email: 'netoj96@live.com',
+    name: 'Test TO',
+    email: toEmail,
   }],
   sender: {
-    name: 'Neto Jocelino',
+    name: senderEmail,
     email: 'netoj96@live.com',
   },
   subject: 'Sending a email with bluebox (a Sendinblue wrapper)',
