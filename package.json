@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "start": "ts-node -T index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ts-node index.spec.ts"
   },
   "keywords": [
     "mail",
