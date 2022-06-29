@@ -1,0 +1,30 @@
+{
+  "name": "@rogue_psycho/bluebox",
+  "version": "1.0.0",
+  "description": "A simple Sendinblue wrapper",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node -T index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mail",
+    "sendinbox"
+  ],
+  "author": "Neto Jocelino <netoj96@live.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.1.0"
+  }
+}
